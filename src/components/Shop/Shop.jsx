@@ -6,6 +6,16 @@ const Shop = () => {
 
     const [products,setProducts]=useState([]);
 
+    const[cart,setCart]=useState([])
+
+    const handleAddToCart=(product)=>{
+        console.log(product)
+        const newCart=[...cart,product]
+        setCart(newCart)
+        console.log(newCart)
+
+    }
+
 
     useEffect(()=>{
 
@@ -27,12 +37,14 @@ const Shop = () => {
                     products.map(product=><Product
                     key={product.id}
                     product={product}
+                    handleAddToCart={handleAddToCart}
                     ></Product>)
                 }
 
             </div>
             <div className='cart-container'>
                 <h1>order summary</h1>
+                <p>Total Order:{cart.length}</p>
 
             </div>
             
