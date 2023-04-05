@@ -19,6 +19,10 @@ const Shop = () => {
         
 
     }
+    const clearAddCart=()=>{
+        setCart([])
+        deleteShoppingCart()
+    }
 
 
     useEffect(()=>{
@@ -84,7 +88,10 @@ const Shop = () => {
 
             </div>
             <div className='cart-container'>
-               <Cart cart={cart}></Cart>
+               <Cart cart={cart}
+                  clearAddCart={clearAddCart}
+                    
+                ></Cart>
 
             </div>
             
