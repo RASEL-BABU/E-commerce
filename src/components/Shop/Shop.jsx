@@ -3,6 +3,7 @@ import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
 
@@ -91,7 +92,10 @@ const Shop = () => {
                <Cart cart={cart}
                   clearAddCart={clearAddCart}
                     
-                ></Cart>
+                >
+                   <Link className='procced-link' to='/orders'><button className='btn-procced'>Review Orders</button></Link>
+                    
+                </Cart>
 
             </div>
             

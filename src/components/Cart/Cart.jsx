@@ -8,7 +8,7 @@ const Cart = (props) => {
     
    
 
-    const {cart,clearAddCart}=props;
+    const {cart,clearAddCart,children}=props;
    
    
 
@@ -37,6 +37,7 @@ const Cart = (props) => {
                 <button className='btn-clr'onClick={clearAddCart}> <span>clear cart</span>
                 <FontAwesomeIcon className='' icon={faTrashAlt} />
                    </button>
+                   {children}
 
         </div>
     );

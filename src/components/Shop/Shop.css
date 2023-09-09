@@ -10,3 +10,20 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+.btn-procced{
+    background-color: red;
+    width: 90%;
+    margin: 10px auto;
+    
+    border-radius: 4px;
+    display: flex;
+    color: wheat;
+    height: 56px;
+    font-size: 21px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.procced-link{
+    text-decoration: none;
+}
